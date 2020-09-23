@@ -17,7 +17,7 @@ export function sendSlackMessage(cartUrl: string) {
 
 			Logger.info(`↗ slack message sent to '${channel}': ${cartUrl}`);
 		} catch (error) {
-			Logger.error(error);
+			Logger.error(error.data);
 		}
 	})();
 }
